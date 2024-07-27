@@ -1,0 +1,151 @@
+:root{
+    --red:crimson;
+    --green:#53BF9D;
+    --yellow:#FFC54D;
+    --white:whitesmoke;
+
+}
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.landing{
+    background-image: url(pexels-thepaintedsquare-858094.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.header,a{
+    text-decoration:none;
+    color:var(--yellow);
+}
+
+header{
+    display: flex;
+    padding: 1em;
+}
+
+#logo{
+    flex: 3;
+    font-size: 1.25em;
+}
+
+nav{
+    flex: 2;
+    display: flex;
+}
+
+nav a{
+    flex:1;
+    
+}
+
+nav a:hover{
+    color: var(--green);
+}
+
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    padding: 2em;
+}
+
+.tagline1{
+    color: var(--red);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.tagline2{
+    color: var(--yellow);
+}
+
+.maintext div{
+    margin-top: .75em;
+}
+
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    color: var(--white);
+    border: 1px solid var(--green);
+}
+
+
+.menu{
+    display: grid;
+    background:linear-gradient(to right,rgb(91, 87, 87),rgb(42, 41, 41));
+    color: var(--white);
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+}
+
+#menuheading,#location{
+    background:linear-gradient(to right,rgb(91, 87, 87),rgb(42, 41, 41));
+    color: var(--red);
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+th{
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+table{
+    width: 100%;
+    padding: 1em;
+}
+
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8em;
+}
+
+.menu td:nth-child(1){
+    justify-self: left;
+    flex: 1;
+}
+
+
+.menu td:nth-child(2){
+    justify-self: right;
+}
+
+.loc {
+    background:linear-gradient(to right,rgb(91, 87, 87),rgb(42, 41, 41));
+    color: var(--white);
+    display: flex;
+}
+
+.loc h2{
+    color: var(--green);
+    margin-bottom:.5em;
+
+}
+
+.loc div{
+    flex:1;
+    padding: 1em;
+    min-width:230px;
+  
+}
+
+footer{
+    background:linear-gradient(to right,rgb(40, 37, 37),rgb(34, 29, 29));
+    color: var(--white);
+    padding: .25em 1em;
+}
+
